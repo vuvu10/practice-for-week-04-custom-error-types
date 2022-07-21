@@ -13,7 +13,7 @@ Run `npm install` to install any dependencies.
 Create a `ValidationError` error type that inherits from the `Error` type. It
 should be thrown whenever an input is invalid.
 
-Here's an example of how the `MaximumLengthExceededError` can be used:
+Here's an example of how the `ValidationError` can be used:
 
 ```js
 class Field {
@@ -102,7 +102,7 @@ Implement the following in the __error-types/maximum-length-exceeded-error.js__
 file.
 
 1. Create an error type called `MaximumLengthExceededError` that inherits from
-   `Error`.
+   `ValidationError`.
 2. The first argument to the `constructor` method should represent the
    difference in the maximum length and actual length of the input.
    The `message` property of the instantiated instance should be set to
